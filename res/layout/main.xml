@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    >
+  
+
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="375dip"
+    android:keepScreenOn="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    android:visibility="visible" 
+    android:layout_above="@+id/btSelectUser">        
+<TextView 
+    android:id="@+id/msgLog" 
+    android:scrollbars="vertical"
+    android:keepScreenOn="true" 
+    android:layout_height="fill_parent"
+    android:textColor="#000000"
+    android:textSize="20sp"     
+    android:layout_width="fill_parent"
+    android:text=""  
+    >
+</TextView>
+
+</ScrollView>
+
+  <Button
+        android:id="@+id/btSelectUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/InnerRelativeLayout"
+        android:text="Select User" />
+
+    <RelativeLayout 
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button 
+            android:text="Send" 
+            android:id="@+id/btSend"
+            android:layout_alignParentRight="true" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <EditText 
+            android:id="@+id/TextBox" 
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@id/btSend"
+            android:layout_height="wrap_content">
+        </EditText>
+
+    </RelativeLayout>
+
+</RelativeLayout>
